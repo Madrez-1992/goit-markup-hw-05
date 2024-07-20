@@ -789,59 +789,38 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
    fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
    display: inline-flex;
-   align-items: center;
-   justify-content: center;
+  
    fill: transparent;
 }
 
-
+.check-text{
+  display: inline-flex; 
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+ border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-check-text{
   
 font-weight: 400;
 font-size: 12px;
 line-height: 117%;
 letter-spacing: 0.04em;
-display: inline-flex;
+color: #8E8F99;
+display: flex;
 align-items: center;
 gap: 8px;
-color: #8E8F99;
 }
-
-.modal-check-text .check-text{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.modal-check:checked + .modal-check-text {
-   background-color: #404BBF;
+.modal-check:checked + .modal-check-text span{
+  background-color: #404BBF;
 border: none;
 fill: #F4F4FD;
-} 
 
-.check-text{
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   /* display: inline-flex; */
-}
+} 
 .privacy-policy-link{
   text-decoration: underline;
   color: #4D5AE5;
+
 }
-.privacy-policy-link:hover {
-    color: #303F9F;
-  }
- 
-    .modal-submit-button{
+ .modal-submit-button{
   min-width: 169px;
   font-weight: 500;
   line-height: 1.5;
